@@ -1,0 +1,41 @@
+{
+  "@@locale": "fr",
+  "appTitle": "FishSaleCorp App",
+
+  "users": "Utilisateurs",
+  "fishermen": "Pêcheurs",
+  "clients": "Clients",
+
+  "preferences": "Préférences",
+  "language": "Langue",
+  "notifications": "Notifications",
+  "dark_mode": "Mode sombre",
+  "save_changes": "Enregistrer les modifications",
+  "profile_updated": "Profil mis à jour avec succès",
+  "no_data": "Aucune donnée disponible",
+  "dark_mode_description": "Activer le thème sombre pour l'application",
+  "change_password": "Changer le mot de passe",
+  "change_password_subtitle": "Mettez à jour votre mot de passe",
+  "about_subtitle": "Version de l'application et développeur",
+  "report_problem_subtitle": "Envoyer un rapport à soporte@fishcorp.com",
+
+  "confirm_delete_title": "Confirmer la suppression",
+  "confirm_delete_message": "Voulez-vous supprimer {name} ? Cette action est irréversible.",
+  "confirm_change_role_title": "Confirmer le changement de rôle",
+  "confirm_change_role_message": "Voulez-vous changer le rôle de {name} en {role} ?",
+  "cancel": "Annuler",
+  "confirm": "Confirmer",
+  "delete": "Supprimer",
+
+  "change_to_client": "Changer en Client",
+  "change_to_fisherman": "Changer en Pêcheur",
+  "change_to_admin": "Changer en Admin",
+
+  "user_deleted": "Utilisateur supprimé avec succès",
+  "role_changed": "Rôle changé en {role} avec succès",
+
+  "about_title": "À propos de FishSaleCorp",
+  "report_problem": "Signaler un problème",
+
+  "language_changed": "Langue changée en {lang}"
+}

@@ -1,0 +1,22 @@
+{
+    // Optimización general de VS Code
+    "workbench.editor.enablePreview": false,           // Evita recargar pestañas constantemente
+    "workbench.editor.enablePreviewFromQuickOpen": false, // Oculta barra lateral para más espacio
+    "workbench.tree.indent": 16,
+    "editor.minimap.enabled": false,                  // Desactiva el minimapa
+    "editor.renderWhitespace": "none",
+    "editor.cursorBlinking": "solid",                // Animación de cursor simple
+    "files.autoSave": "off",              // Menos procesamiento constante
+    "telemetry.enableTelemetry": false,              // Menos carga de telemetría
+
+    // Terminal externo
+    "terminal.external.windowsExec": "C:\\Windows\\System32\\cmd.exe",
+
+    // Java
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "workbench.activityBar.location": "default",
+    
+    "dart.flutterRunAdditionalArgs": ["-d", "chrome", "--web-port=5000"]
+
+}
