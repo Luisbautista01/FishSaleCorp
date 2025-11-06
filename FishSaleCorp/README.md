@@ -119,7 +119,7 @@
 <body>
 
 <header>
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABgAAAAQACAIAAACoEwUVAACysWNhQlgAALKxanVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNjMnBhAAAANvtqdW1iAAAAR2p1bWRjMm1hABEAEIAAAKoAOJtxA3VybjpjMnBhOmM2MDU0NmU0LTU0ZjEtNDkyMC05YTkyLWUxYmE0ZmVmZWJlOQAAAAHBanVtYgAAAClqdW1kYzJhcwARABCAAACqADibcQNjMnBhLmFzc2VydGlvbnMAAAAA5Wp1bWIAAAApanVtZGNib3IAEQAQgAAAqgA4m3EDYzJwYS5hY3Rpb25zLnYyAAAAALRjYm9yoWdhY3Rpb25zgqNmYWN0aW9ubGMycGEuY3JlYXRlZG1zb2Z0d2FyZUFnZW50v2RuYW1lZkdQVC00b/9xZGlnaXRhbFNvdXJjZVR5cGV4Rmh0dHA6Ly9jdi5pcHRjLm9yZy9uZXdzY29kZXMvZGln..." alt="FishSaleCorp Logo">
+  <img src="https://raw.githubusercontent.com/Luisbautista01/FishSaleCorp/main/logo.png" alt="FishSaleCorp Logo">
   <h1>🐟 FishSaleCorp — Guía de API y Flujo del Sistema</h1>
 </header>
 
