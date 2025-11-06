@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FishSaleCorpApplication",
+            "request": "launch",
+            "mainClass": "com.example.FishSaleCorp.FishSaleCorpApplication",
+            "projectName": "FishCorp-FishSaleCorp"
+        },
+        {
+            "type": "java",
             "name": "FishCorpApplication",
             "request": "launch",
             "mainClass": "com.example.FishCorp.FishCorpApplication",

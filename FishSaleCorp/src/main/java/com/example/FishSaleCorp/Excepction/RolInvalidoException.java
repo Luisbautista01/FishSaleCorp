@@ -1,0 +1,7 @@
+package com.example.FishSaleCorp.Excepction;
+
+public class RolInvalidoException extends RuntimeException {
+    public RolInvalidoException(String mensaje) {
+        super(mensaje);
+    }
+}
