@@ -6,6 +6,7 @@
 <title>FishSaleCorp - Guía de Flujo</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  
   @page {
     margin: 2.5cm 2cm 3cm 2cm;
   }
