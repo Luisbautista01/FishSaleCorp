@@ -36,7 +36,7 @@ Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. C
 
 ---
 
-## Rutas principales del sistema 📡
+## 📡 Rutas principales del sistema
 
 | Ruta | Método | Descripción |
 |------|--------|-------------|
