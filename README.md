@@ -21,7 +21,7 @@
 
 <div style="background-color:#f6f8fa; border-radius:12px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,0.05); margin:10px 0;">
   
-## Inicio 🏁
+## 🏁 Inicio
 > Esta guía fue creada para que todo el equipo de **FishSaleCorp** entienda con claridad cómo fluye nuestra aplicación, desde que un usuario se registra hasta que obtiene su comprobante de pago.
 
 </div>
