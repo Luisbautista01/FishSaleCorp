@@ -163,4 +163,4 @@ Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/pagos/999/recibo" 
 
 ---
 
-<p> FishSaleCorp © 2025 — Documento interno de referencia técnica </p>
+<p align="center"> 🐟 <b>FishSaleCorp © 2025</b><br> <i>Documento interno de referencia técnica</i> </p>
