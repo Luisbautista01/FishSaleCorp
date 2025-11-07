@@ -7,30 +7,24 @@
 
 ## Menú de secciones 🧭
 <p align="center">
- <li> <a href="#inicio-🏁"> Inicio 🏁</a> </li>
- <li> <a href="#antes-de-comenzar-⚙️"> Antes de comenzar ⚙️</a> </li> 
- <li> <a href="#rutas-principales-del-sistema-📡"> Rutas 📡</a> </li>
- <li> <a href="#cómo-fluye-todo-🔄"> Flujo 🔄</a> </li>
- <li> <a href="#ejemplo-práctico-con-powershell-💻"> Ejemplo PowerShell 💻</a> </li>
- <li> <a href="#buenas-prácticas-🧠"> Buenas prácticas 🧠</a> </li>
- <li> <a href="#pruebas-y-control-de-calidad-🧪"> Pruebas 🧪</a> </li>
- <li> <a href="#archivos-clave-del-proyecto-📂"> Archivos clave 📂</a> </li>
+ <li> <a href="#🏁-inicio"> 🏁 Inicio</a> </li>
+ <li> <a href="#⚙️-antes-de-comenzar"> ⚙️ Antes de comenzar </a> </li> 
+ <li> <a href="#📡-rutas-principales-del-sistema"> 📡 Rutas </a> </li>
+ <li> <a href="#🔄-cómo-fluye-todo"> 🔄 Flujo</a> </li>
+ <li> <a href="#💻-ejemplo-práctico-con-powershell"> 💻 Ejemplo PowerShell </a> </li>
+ <li> <a href="#🧠-buenas-prácticas"> 🧠 Buenas prácticas</a> </li>
+ <li> <a href="#🧪-pruebas-y-control-de-calidad"> 🧪 Pruebas </a> </li>
+ <li> <a href="#archivos-clave-del-proyecto-📂"> 📂 Archivos clave </a> </li>
 </p>
 
 ---
-
-<div style="background-color:#f6f8fa; border-radius:12px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,0.05); margin:10px 0;">
   
 ## 🏁 Inicio
 > Esta guía fue creada para que todo el equipo de **FishSaleCorp** entienda con claridad cómo fluye nuestra aplicación, desde que un usuario se registra hasta que obtiene su comprobante de pago.
 
-</div>
-
 ---
 
-<div style="background-color:#ffffff; border:1px solid #e3e3e3; border-radius:10px; padding:20px; margin:10px 0; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
-
-## Antes de comenzar ⚙️
+## ⚙️ Antes de comenzar 
 
 Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. Cada persona tiene un rol:
 
@@ -40,11 +34,7 @@ Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. C
 
 > 🔐 Algunas rutas requieren iniciar sesión. El token que recibes funciona como llave de acceso.
 
-</div>
-
 ---
-
-<div style="background-color:#f6f8fa; border-radius:10px; padding:20px; margin:10px 0;">
 
 ## Rutas principales del sistema 📡
 
@@ -60,13 +50,9 @@ Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. C
 
 > ⚠️ Algunas rutas solo funcionan para ciertos roles o con un token válido.
 
-</div>
-
 ---
 
-<div style="background-color:#ffffff; border:1px solid #e3e3e3; border-radius:10px; padding:20px; margin:10px 0;">
-
-## Cómo fluye todo 🔄
+## 🔄 Cómo fluye todo
 
 ### 🧾 Registro y acceso
 > Todo empieza cuando un usuario se registra con su nombre, correo y contraseña. Después inicia sesión y recibe un token: su pase para explorar la app sin restricciones.
@@ -80,13 +66,9 @@ Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. C
 ### 💳 Pagos y comprobantes
 > Luego viene el pago: el sistema simula una transacción. Si se aprueba, el pedido pasa a “Pagado” y el stock se actualiza. Si se rechaza, no cambia nada. Finalmente, se genera un comprobante en PDF.
 
-</div>
-
 ---
 
-<div style="background-color:#f6f8fa; border-radius:10px; padding:20px; margin:10px 0;">
-
-## Ejemplo práctico con PowerShell 💻
+## 💻 Ejemplo práctico con PowerShell
 
 ### 1️⃣ Registro de usuario
 
@@ -151,44 +133,30 @@ $res | Format-List
 ```powershell
 Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/pagos/999/recibo" -Headers @{ Authorization = "Bearer $token" } -OutFile "recibo_999.pdf"
 ```
-</div>
-
 ---
 
-<div style="background-color:#ffffff; border:1px solid #e3e3e3; border-radius:10px; padding:20px;">
-
-## Buenas prácticas 🧠
+## 🧠 Buenas prácticas
 
 - Valida siempre los datos que ingresan al sistema.
 - Usa `BigDecimal` para montos.
 - Evita registrar contraseñas o tokens en logs.
 - Muestra valores por defecto si algo no viene en la respuesta.
 
-</div>
-
 ---
 
-<div style="background-color:#f6f8fa; border-radius:10px; padding:20px; margin:10px 0;">
-  
-## Pruebas y control de calidad 🧪
+## 🧪 Pruebas y control de calidad
 
 - **Pruebas unitarias:** verifican partes individuales del sistema.
 - **Pruebas de integración:** comprueban el flujo completo usando base de datos temporal.
 
-</div>
-
 ---
 
-<div style="background-color:#ffffff; border:1px solid #e3e3e3; border-radius:10px; padding:20px;">
-  
-## Archivos clave del proyecto 📂
+## 📂 Archivos clave del proyecto
 
 - `AuthController.java` — registro e inicio de sesión.
 - `ProductoController.java` — gestión de productos.
 - `PedidoController.java` — manejo de pedidos.
 - `PagoController.java` — simulación de pagos y comprobantes.
-
-</div>
 
 ---
 
