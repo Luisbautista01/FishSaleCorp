@@ -1,6 +1,7 @@
 # 🐟 FishSaleCorp — Guía de API y Flujo del Sistema
-
-![FishSaleCorp Logo](assets/logo.png)
+<p align="center">
+  <img src="https://github.com/Luisbautista01/FishSaleCorp/blob/main/FishSaleCorpApp/assets/logo.png?raw=true" alt="FishSaleCorp Logo" width="180" />
+</p>
 
 ---
 
