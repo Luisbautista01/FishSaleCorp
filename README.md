@@ -1,32 +1,35 @@
 # 🐟 FishSaleCorp — Guía de API y Flujo del Sistema
 <p align="center">
-  <img src="https://github.com/Luisbautista01/FishSaleCorp/blob/main/FishSaleCorpApp/assets/logo.png?raw=true" alt="FishSaleCorp Logo" width="180" />
+  <img src="https://raw.githubusercontent.com/Luisbautista01/FishSaleCorp/main/FishSaleCorpApp/assets/logo.png" alt="FishSaleCorp Logo" width="180" />
 </p>
 
 ---
 
-## Menú de secciones 🧭
+## 🧭 Menú de secciones
 <p align="center">
- <li> <a href="#🏁-inicio"> 🏁 Inicio</a> </li>
- <li> <a href="#⚙️-antes-de-comenzar"> ⚙️ Antes de comenzar </a> </li> 
- <li> <a href="#📡-rutas-principales-del-sistema"> 📡 Rutas </a> </li>
- <li> <a href="#🔄-cómo-fluye-todo"> 🔄 Flujo</a> </li>
- <li> <a href="#💻-ejemplo-práctico-con-powershell"> 💻 Ejemplo PowerShell </a> </li>
- <li> <a href="#🧠-buenas-prácticas"> 🧠 Buenas prácticas</a> </li>
- <li> <a href="#🧪-pruebas-y-control-de-calidad"> 🧪 Pruebas </a> </li>
- <li> <a href="#archivos-clave-del-proyecto-📂"> 📂 Archivos clave </a> </li>
+ <li> <a href="#inicio">🏁 Inicio</a> </li>
+ <li> <a href="#antes-de-comenzar">⚙️ Antes de comenzar</a> </li> 
+ <li> <a href="#rutas-principales">📡 Rutas principales</a> </li>
+ <li> <a href="#flujo-del-sistema">🔄 Flujo del sistema</a> </li>
+ <li> <a href="#ejemplo-powershell">💻 Ejemplo PowerShell</a> </li>
+ <li> <a href="#buenas-practicas">🧠 Buenas prácticas</a> </li>
+ <li> <a href="#pruebas">🧪 Pruebas</a> </li>
+ <li> <a href="#archivos-clave">📂 Archivos clave</a> </li>
 </p>
 
 ---
-  
+
+<a name="inicio"></a>
 ## 🏁 Inicio
 > Esta guía fue creada para que todo el equipo de **FishSaleCorp** entienda con claridad cómo fluye nuestra aplicación, desde que un usuario se registra hasta que obtiene su comprobante de pago.
 
 ---
 
-## ⚙️ Antes de comenzar 
+<a name="antes-de-comenzar"></a>
+## ⚙️ Antes de comenzar
 
-Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. Cada persona tiene un rol:
+Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`.  
+Cada persona tiene un rol:
 
 - 👤 **Cliente:** compra productos disponibles.  
 - 🐟 **Pescador:** publica sus productos para la venta.  
@@ -36,6 +39,7 @@ Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. C
 
 ---
 
+<a name="rutas-principales"></a>
 ## 📡 Rutas principales del sistema
 
 | Ruta | Método | Descripción |
@@ -52,26 +56,33 @@ Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. C
 
 ---
 
+<a name="flujo-del-sistema"></a>
 ## 🔄 Cómo fluye todo
 
 ### 🧾 Registro y acceso
-> Todo empieza cuando un usuario se registra con su nombre, correo y contraseña. Después inicia sesión y recibe un token: su pase para explorar la app sin restricciones.
+> Todo empieza cuando un usuario se registra con su nombre, correo y contraseña.  
+> Después inicia sesión y recibe un token: su pase para explorar la app sin restricciones.
 
 ### 🏷 Productos
-> Los pescadores y administradores suben productos indicando precio, cantidad y categoría. Los clientes pueden ver la lista, comparar y elegir lo que desean comprar.
+> Los pescadores y administradores suben productos indicando precio, cantidad y categoría.  
+> Los clientes pueden ver la lista, comparar y elegir lo que desean comprar.
 
 ### 📦 Pedidos
-> El cliente selecciona un producto, indica cantidad y dirección de entrega. El sistema crea un pedido listo para pagar. Los “pedidos compuestos” permiten comprar varios productos al mismo tiempo.
+> El cliente selecciona un producto, indica cantidad y dirección de entrega.  
+> El sistema crea un pedido listo para pagar.  
+> Los “pedidos compuestos” permiten comprar varios productos al mismo tiempo.
 
 ### 💳 Pagos y comprobantes
-> Luego viene el pago: el sistema simula una transacción. Si se aprueba, el pedido pasa a “Pagado” y el stock se actualiza. Si se rechaza, no cambia nada. Finalmente, se genera un comprobante en PDF.
+> Luego viene el pago: el sistema simula una transacción.  
+> Si se aprueba, el pedido pasa a “Pagado” y el stock se actualiza.  
+> Finalmente, se genera un comprobante en PDF.
 
 ---
 
+<a name="ejemplo-powershell"></a>
 ## 💻 Ejemplo práctico con PowerShell
 
 ### 1️⃣ Registro de usuario
-
 ```powershell
 Invoke-RestMethod -Method Post -Uri "http://localhost:8080/api/auth/registro" -ContentType 'application/json' -Body (@{
     nombre = 'Luis Bautista';
@@ -135,6 +146,7 @@ Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/pagos/999/recibo" 
 ```
 ---
 
+<a name="buenas-practicas"></a>
 ## 🧠 Buenas prácticas
 
 - Valida siempre los datos que ingresan al sistema.
@@ -144,6 +156,7 @@ Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/pagos/999/recibo" 
 
 ---
 
+<a name="pruebas"></a>
 ## 🧪 Pruebas y control de calidad
 
 - **Pruebas unitarias:** verifican partes individuales del sistema.
@@ -151,6 +164,7 @@ Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/pagos/999/recibo" 
 
 ---
 
+<a name="archivos-clave"></a>
 ## 📂 Archivos clave del proyecto
 
 - `AuthController.java` — registro e inicio de sesión.
