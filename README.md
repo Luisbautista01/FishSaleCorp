@@ -7,14 +7,14 @@
 
 ## Menú de secciones 🧭
 <p align="center">
- <li> <a href="#inicio"> Inicio 🏁</a> </li>
- <li> <a href="#antes-de-comenzar"> Antes de comenzar ⚙️</a> </li> 
- <li> <a href="#rutas-principales-del-sistema"> Rutas 📡</a> </li>
- <li> <a href="#cómo-fluye-todo"> Flujo 🔄</a> </li>
- <li> <a href="#ejemplo-práctico-con-powershell"> Ejemplo PowerShell</a> </li>
- <li> <a href="#buenas-prácticas"> Buenas prácticas 🧠</a> </li>
- <li> <a href="#pruebas-y-control-de-calidad"> Pruebas 🧪</a> </li>
- <li> <a href="#archivos-clave-del-proyecto"> Archivos clave 📂</a> </li>
+ <li> <a href="#inicio-🏁"> Inicio 🏁</a> </li>
+ <li> <a href="#antes-de-comenzar-⚙️"> Antes de comenzar ⚙️</a> </li> 
+ <li> <a href="#rutas-principales-del-sistema-📡"> Rutas 📡</a> </li>
+ <li> <a href="#cómo-fluye-todo-🔄"> Flujo 🔄</a> </li>
+ <li> <a href="#ejemplo-práctico-con-powershell-💻"> Ejemplo PowerShell 💻</a> </li>
+ <li> <a href="#buenas-prácticas-🧠"> Buenas prácticas 🧠</a> </li>
+ <li> <a href="#pruebas-y-control-de-calidad-🧪"> Pruebas 🧪</a> </li>
+ <li> <a href="#archivos-clave-del-proyecto-📂"> Archivos clave 📂</a> </li>
 </p>
 
 ---
