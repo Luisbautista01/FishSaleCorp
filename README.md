@@ -1,4 +1,4 @@
-# 🐟 FishSaleCorp — Guía de# 🐟 FishSaleCorp — Guía de API y Flujo del Sistema
+# 🐟 FishSaleCorp — Guía de API y Flujo del Sistema
 <p align="center">
   <img src="https://github.com/Luisbautista01/FishSaleCorp/blob/main/FishSaleCorpApp/assets/logo.png?raw=true" alt="FishSaleCorp Logo" width="180" />
 </p>
@@ -7,19 +7,19 @@
 
 ## Menú de secciones 🧭
 <p align="center">
-  <a href="#inicio">🏁 Inicio</a> • 
-  <a href="#antes-de-comenzar">⚙️ Antes de comenzar</a> • 
-  <a href="#rutas-principales-del-sistema">📡 Rutas</a> • 
-  <a href="#cómo-fluye-todo">🔄 Flujo</a> • 
-  <a href="#ejemplo-práctico-con-powershell">💻 Ejemplo PowerShell</a> • 
-  <a href="#buenas-prácticas">🧠 Buenas prácticas</a> • 
-  <a href="#pruebas-y-control-de-calidad">🧪 Pruebas</a> • 
-  <a href="#archivos-clave-del-proyecto">📂 Archivos clave</a>
+ <li> <a href="#inicio"> Inicio 🏁</a> </li>
+ <li> <a href="#antes-de-comenzar"> Antes de comenzar ⚙️</a> </li> 
+ <li> <a href="#rutas-principales-del-sistema"> Rutas 📡</a> </li>
+ <li> <a href="#cómo-fluye-todo"> Flujo 🔄</a> </li>
+ <li> <a href="#ejemplo-práctico-con-powershell"> Ejemplo PowerShell</a> </li>
+ <li> <a href="#buenas-prácticas"> Buenas prácticas 🧠</a> </li>
+ <li> <a href="#pruebas-y-control-de-calidad"> Pruebas 🧪</a> </li>
+ <li> <a href="#archivos-clave-del-proyecto"> Archivos clave 📂</a> </li>
 </p>
 
 ---
 
-<div align="center" style="background-color:#f6f8fa; border-radius:12px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,0.05); margin:10px 0;">
+<div style="background-color:#f6f8fa; border-radius:12px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,0.05); margin:10px 0;">
   
 ## Inicio 🏁
 > Esta guía fue creada para que todo el equipo de **FishSaleCorp** entienda con claridad cómo fluye nuestra aplicación, desde que un usuario se registra hasta que obtiene su comprobante de pago.
