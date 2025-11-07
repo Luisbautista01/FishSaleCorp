@@ -1,29 +1,36 @@
-# 🐟 FishSaleCorp — Guía de API y Flujo del Sistema
+# 🐟 FishSaleCorp — Guía de# 🐟 FishSaleCorp — Guía de API y Flujo del Sistema
 <p align="center">
   <img src="https://github.com/Luisbautista01/FishSaleCorp/blob/main/FishSaleCorpApp/assets/logo.png?raw=true" alt="FishSaleCorp Logo" width="180" />
 </p>
 
 ---
 
-## Menú de secciones
-
-- [Inicio](#inicio)
-- [Antes de comenzar](#antes-de-comenzar)
-- [Rutas principales](#rutas-principales-del-sistema)
-- [Flujo del sistema](#cómo-fluye-todo)
-- [Ejemplo PowerShell](#ejemplo-práctico-con-powershell)
-- [Buenas prácticas](#buenas-prácticas)
-- [Pruebas y control](#pruebas-y-control-de-calidad)
-- [Archivos clave](#archivos-clave-del-proyecto)
+## Menú de secciones 🧭
+<p align="center">
+  <a href="#inicio">🏁 Inicio</a> • 
+  <a href="#antes-de-comenzar">⚙️ Antes de comenzar</a> • 
+  <a href="#rutas-principales-del-sistema">📡 Rutas</a> • 
+  <a href="#cómo-fluye-todo">🔄 Flujo</a> • 
+  <a href="#ejemplo-práctico-con-powershell">💻 Ejemplo PowerShell</a> • 
+  <a href="#buenas-prácticas">🧠 Buenas prácticas</a> • 
+  <a href="#pruebas-y-control-de-calidad">🧪 Pruebas</a> • 
+  <a href="#archivos-clave-del-proyecto">📂 Archivos clave</a>
+</p>
 
 ---
 
-## Inicio
+<div align="center" style="background-color:#f6f8fa; border-radius:12px; padding:20px; box-shadow:0 2px 6px rgba(0,0,0,0.05); margin:10px 0;">
+  
+## Inicio 🏁
 > Esta guía fue creada para que todo el equipo de **FishSaleCorp** entienda con claridad cómo fluye nuestra aplicación, desde que un usuario se registra hasta que obtiene su comprobante de pago.
 
+</div>
+
 ---
 
-## Antes de comenzar
+<div style="background-color:#ffffff; border:1px solid #e3e3e3; border-radius:10px; padding:20px; margin:10px 0; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+
+## Antes de comenzar ⚙️
 
 Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. Cada persona tiene un rol:
 
@@ -31,11 +38,15 @@ Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. C
 - 🐟 **Pescador:** publica sus productos para la venta.  
 - ⚙️ **Administrador:** supervisa y mantiene todo bajo control.
 
-> Algunas rutas requieren iniciar sesión. El token que recibes funciona como llave de acceso.
+> 🔐 Algunas rutas requieren iniciar sesión. El token que recibes funciona como llave de acceso.
+
+</div>
 
 ---
 
-## Rutas principales del sistema
+<div style="background-color:#f6f8fa; border-radius:10px; padding:20px; margin:10px 0;">
+
+## Rutas principales del sistema 📡
 
 | Ruta | Método | Descripción |
 |------|--------|-------------|
@@ -49,29 +60,33 @@ Cuando levantas el backend, se ejecuta por defecto en `http://localhost:8080`. C
 
 > ⚠️ Algunas rutas solo funcionan para ciertos roles o con un token válido.
 
+</div>
+
 ---
 
-## Cómo fluye todo
+<div style="background-color:#ffffff; border:1px solid #e3e3e3; border-radius:10px; padding:20px; margin:10px 0;">
+
+## Cómo fluye todo 🔄
 
 ### 🧾 Registro y acceso
-
 > Todo empieza cuando un usuario se registra con su nombre, correo y contraseña. Después inicia sesión y recibe un token: su pase para explorar la app sin restricciones.
 
 ### 🏷 Productos
-
 > Los pescadores y administradores suben productos indicando precio, cantidad y categoría. Los clientes pueden ver la lista, comparar y elegir lo que desean comprar.
 
 ### 📦 Pedidos
-
 > El cliente selecciona un producto, indica cantidad y dirección de entrega. El sistema crea un pedido listo para pagar. Los “pedidos compuestos” permiten comprar varios productos al mismo tiempo.
 
 ### 💳 Pagos y comprobantes
-
 > Luego viene el pago: el sistema simula una transacción. Si se aprueba, el pedido pasa a “Pagado” y el stock se actualiza. Si se rechaza, no cambia nada. Finalmente, se genera un comprobante en PDF.
+
+</div>
 
 ---
 
-## Ejemplo práctico con PowerShell
+<div style="background-color:#f6f8fa; border-radius:10px; padding:20px; margin:10px 0;">
+
+## Ejemplo práctico con PowerShell 💻
 
 ### 1️⃣ Registro de usuario
 
@@ -136,31 +151,44 @@ $res | Format-List
 ```powershell
 Invoke-RestMethod -Method Get -Uri "http://localhost:8080/api/pagos/999/recibo" -Headers @{ Authorization = "Bearer $token" } -OutFile "recibo_999.pdf"
 ```
+</div>
 
 ---
 
-## Buenas prácticas
+<div style="background-color:#ffffff; border:1px solid #e3e3e3; border-radius:10px; padding:20px;">
+
+## Buenas prácticas 🧠
 
 - Valida siempre los datos que ingresan al sistema.
 - Usa `BigDecimal` para montos.
 - Evita registrar contraseñas o tokens en logs.
 - Muestra valores por defecto si algo no viene en la respuesta.
 
+</div>
+
 ---
 
-## Pruebas y control de calidad
+<div style="background-color:#f6f8fa; border-radius:10px; padding:20px; margin:10px 0;">
+  
+## Pruebas y control de calidad 🧪
 
 - **Pruebas unitarias:** verifican partes individuales del sistema.
 - **Pruebas de integración:** comprueban el flujo completo usando base de datos temporal.
 
+</div>
+
 ---
 
-## Archivos clave del proyecto
+<div style="background-color:#ffffff; border:1px solid #e3e3e3; border-radius:10px; padding:20px;">
+  
+## Archivos clave del proyecto 📂
 
 - `AuthController.java` — registro e inicio de sesión.
 - `ProductoController.java` — gestión de productos.
 - `PedidoController.java` — manejo de pedidos.
 - `PagoController.java` — simulación de pagos y comprobantes.
+
+</div>
 
 ---
 
